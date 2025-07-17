@@ -1,0 +1,15 @@
+[project]
+name = "acedpy"
+version = "0.1.0"
+description = "Tool to enumerate a single target's DACL in Active Directory"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "impacket==0.9.24",
+    "ldap3==2.8.1",
+    "pyasn1==0.4.8",
+    "typer>=0.16.0",
+]
+
+[project.scripts]
+acedpy = "aced.__main__:app"
